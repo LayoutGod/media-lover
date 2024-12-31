@@ -10,6 +10,7 @@ const BlogDetails = () => {
     fetch('https://dummy-blog-server.onrender.com/blogs/' + blog.id, {
       method: 'DELETE',
     })
+    
    .then(() => {
     history.push('/')
    }
