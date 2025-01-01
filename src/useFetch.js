@@ -17,13 +17,12 @@ const useFetch = (url) => {
                 return response.json()
              })
             .then(data => {
-                console.log(data);
                 setData(data);
                 setIsLoading(false);
                 setError(null);
             })
                 .catch(error => {
-                console.log(error.message)
+                console.log(error.message);
                 setError(error.message)
                 setIsLoading(false)
                 })
