@@ -9,7 +9,7 @@ const useFetch = (url) => {
         const abortCont = new AbortController();
 
         setTimeout(() =>{
-          fetch(`https://dummy-backend-z4lz.onrender.com/blogs/`, { signal: AbortController.Signal})
+          fetch(url, { signal: AbortController.Signal})
           .then(response => {
                 if(!response.ok){
                 throw  Error(`HTTP error! status: ${response.status}`);
@@ -17,6 +17,7 @@ const useFetch = (url) => {
                 return response.json()
              })
             .then(data => {
+                console.log(data)
                 setData(data);
                 setIsLoading(false);
                 setError(null);
