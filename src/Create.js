@@ -22,7 +22,7 @@ const Create = () => {
 
   return (
     <div className="create">
-      <h2>Add a New Blog</h2>
+      <h2>Add a New Article</h2>
       <form onSubmit={handleSubmit}>
         <label>Blog title:</label>
         <input 
@@ -45,7 +45,7 @@ const Create = () => {
           <option value="mario">Àrvís Gïft</option>
           <option value="Chioma">Timothy</option>
         </select>
-        <button>Add Blog</button>
+        <button>Post Article</button>
       </form>
     </div>
   );
