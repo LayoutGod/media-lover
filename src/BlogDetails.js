@@ -4,10 +4,10 @@ import { useHistory } from "react-router-dom";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const{data: blog , error , isLoading} = useFetch('http://localhost:8000/blogs/' + id)
-  const history = useHistory();
+  const{data: blog , error , isLoading} = useFetch('https://dummy-backend-z4lz.onrender.com/blogs/' + id)
+  const history = useHistory()
   const handleClick = () =>{
-    fetch('http://localhost:8000/blogs/' + blog.id, {
+    fetch('https://dummy-backend-z4lz.onrender.com/blogs/' + blog.id, {
       method: 'DELETE',
     })
     
