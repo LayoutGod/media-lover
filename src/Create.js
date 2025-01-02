@@ -42,8 +42,8 @@ const Create = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         >
-          <option value="mario">mario</option>
-          <option value="Chioma">yoshi</option>
+          <option value="mario">Àrvís Gïft</option>
+          <option value="Chioma">Timothy</option>
         </select>
         <button>Add Blog</button>
       </form>
